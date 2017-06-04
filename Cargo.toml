@@ -1,14 +1,12 @@
 [package]
-name = "exit-code"
-version = "1.0.0"
-authors = ["Richard Fussenegger <fleshgrinder@users.noreply.github.com>"]
-description = "Commonly used exit codes for usage in applications."
+name          = "exit-code"
+version       = "1.0.0"
+authors       = ["Richard Fussenegger <fleshgrinder@users.noreply.github.com>"]
+description   = "Commonly used exit codes for usage in applications."
 documentation = "https://docs.rs/exit-code"
-homepage = "https://github.com/Fleshgrinder/rust-exit-code"
-repository = "https://github.com/Fleshgrinder/rust-exit-code"
-readme = "README.md"
-keywords = ["sysexit", "exit-code"]
-categories = ["os", "command-line-interface"]
-license = "Unlicense"
-
-[dependencies]
+homepage      = "https://github.com/Fleshgrinder/rust-exit-code"
+repository    = "https://github.com/Fleshgrinder/rust-exit-code"
+readme        = "README.md"
+keywords      = ["cli", "exit-codes", "sysexit"]
+categories    = ["command-line-interface", "os", "no-std"]
+license       = "Unlicense"

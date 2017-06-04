@@ -77,9 +77,8 @@ pub const NO_PERMISSION: i32 = 77;
 /// Something was found in an unconfigured or misconfigured state.
 pub const CONFIG_ERROR: i32 = 78;
 
-/// Check if the given exit code is reserved.
-///
-/// Reserved exit codes are the ones that have a special meaning in a shell:
+/// Check if the given exit code is reserved and has a special meaning in a
+/// shells.
 ///
 /// |-----------|----------------------------------------------------------|
 /// | Exit Code | Meaning                                                  |
@@ -112,9 +111,7 @@ pub fn is_reserved(c: i32) -> bool {
     (0 <= c && c <= 2) || (64 <= c && c <= 78) || (126 <= c && c <= 137)
 }
 
-/// Check if the given exit code is valid.
-///
-/// Valid exit codes are in [0..256].
+/// Check if the given exit code is in [0..256].
 pub fn is_valid(c: i32) -> bool {
     0 <= c && c <= 255
 }
