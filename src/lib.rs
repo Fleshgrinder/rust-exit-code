@@ -4,11 +4,11 @@
 //! ```
 //! extern crate exit_code;
 //!
-//! ::std::process::exit(exit_code::OK);
+//! ::std::process::exit(exit_code::SUCCESS);
 //! ```
 
 /// Successful termination.
-pub const OK: i32 = 0;
+pub const SUCCESS: i32 = 0;
 
 /// Unsuccessful termination. This is a catch-all error code that should only
 /// be used by processes if the reason for the failure is unknown.
