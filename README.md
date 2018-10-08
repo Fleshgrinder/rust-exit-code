@@ -12,7 +12,7 @@ Add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-exit_codes = "1.0.0"
+exit-codes = "1.0.0"
 ```
 
 ## Usage
